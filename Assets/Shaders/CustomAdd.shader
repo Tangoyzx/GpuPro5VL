@@ -42,9 +42,6 @@
 
 			fixed4 frag (v2f i) : SV_Target
 			{
-				// return fixed4(i.uv, 0, 1);
-				// return tex2D(_SecTex, i.uv);
-				// return tex2D(_MainTex, i.uv);
 				return tex2D(_MainTex, i.uv) + tex2D(_SecTex, i.uv);
 			}
 			ENDCG
